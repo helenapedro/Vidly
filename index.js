@@ -3,8 +3,12 @@ const app = express()
 
 
 app.get('/api/genres', (req, res) => {
-     res.send(genres)
-})
+     res.send(genres);
+});
+
+app.get('/api/genres/:id', (req, res) => {
+     res.send(req.params.id);
+});
 
 /* app.post()
 app.put()
