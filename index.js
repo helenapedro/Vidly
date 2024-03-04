@@ -7,7 +7,7 @@ app.get('/api/genres', (req, res) => {
 });
 
 app.get('/api/genres/:id', (req, res) => {
-     res.send(req.params.id);
+     genres.find(c => c.id == req.params.id);
 });
 
 /* app.post()
