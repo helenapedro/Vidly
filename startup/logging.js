@@ -13,7 +13,7 @@ module.exports = function() {
   
   winston.add(winston.transports.File, { filename: 'logfile.log' });
   // winston.add(winston.transports.MongoDB, { 
-  //   db: 'mongodb://localhost/vidly',
+  //   db: 'mongodb://127.0.0.1:27017/vidly',
   //   level: 'info'
   // });  
 }
