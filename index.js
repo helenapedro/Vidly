@@ -14,5 +14,11 @@ const server = app.listen(port, () => winston.info(`Listening on port ${port}...
 module.exports = server;
 
 
+/* mongoose.connect('mongodb://127.0.0.1:27017/vidly')
+  .then(() => console.log('Connected to MongoDB...'))
+  .catch(err => console.error('Could not connect to MongoDB...'));
+
+
+ */
 
 
