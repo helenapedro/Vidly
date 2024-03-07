@@ -9,7 +9,7 @@ describe('/api/genres', () => {
   beforeEach(() => { server = require('../../index'); })
   afterEach(async () => { 
     await server.close(); 
-    await Genre.remove({});
+    await Genre.deleteMany({});
   });
 
   describe('GET /', () => {
@@ -48,7 +48,7 @@ describe('/api/genres', () => {
     });
 
     it('should return 404 if no genre with the given id exists', async () => {
-      const id = mongoose.Types.ObjectId();
+      const id = new mongoose.Types.ObjectId();
       const res = await request(server).get('/api/genres/' + id);
 
       expect(res.status).toBe(404);
@@ -164,7 +164,7 @@ describe('/api/genres', () => {
     });
 
     it('should return 404 if id is invalid', async () => {
-      id = 1;
+      id = new mongoose.Types.ObjectId();
 
       const res = await exec();
 
@@ -172,7 +172,7 @@ describe('/api/genres', () => {
     });
 
     it('should return 404 if genre with the given id was not found', async () => {
-      id = mongoose.Types.ObjectId();
+      id = new mongoose.Types.ObjectId();
 
       const res = await exec();
 
@@ -234,7 +234,7 @@ describe('/api/genres', () => {
     });
 
     it('should return 404 if id is invalid', async () => {
-      id = 1; 
+      id = new mongoose.Types.ObjectId(); 
       
       const res = await exec();
 
@@ -242,7 +242,7 @@ describe('/api/genres', () => {
     });
 
     it('should return 404 if no genre with the given id was found', async () => {
-      id = mongoose.Types.ObjectId();
+      id = new mongoose.Types.ObjectId();
 
       const res = await exec();
 
