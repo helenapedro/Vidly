@@ -4,6 +4,13 @@ const config = require('config');
 
 module.exports = function() {
   const db = config.get('db');
-  mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
+  mongoose.connect(db, { 
+    useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => winston.info(`Connected to ${db}...`));
 }
+
+
+/* mongoose.connect('mongodb://127.0.0.1:27017/vidly')
+  .then(() => console.log('Connected to MongoDB...'))
+  .catch(err => console.error('Could not connect to MongoDB...'));
+ */
