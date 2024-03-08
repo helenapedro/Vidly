@@ -7,4 +7,3 @@ module.exports = function() {
   mongoose.connect(db)
     .then(() => winston.info(`Connected to ${db}...`));
 }
- 
