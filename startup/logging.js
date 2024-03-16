@@ -13,7 +13,7 @@ module.exports = function() {
   
   winston.add(new winston.transports.File({ filename: 'logfile.log' }));
   winston.add(new winston.transports.MongoDB({ 
-    db: 'mongodb+srv://username:<password>@cluster0.iqa6m5k.mongodb.net/',
+    db: 'mongodb://127.0.0.1:27017/vidly',
     level: 'info',
     options: { useUnifiedTopology: true }
   }));
