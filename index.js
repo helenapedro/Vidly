@@ -2,8 +2,6 @@ const winston = require('winston');
 const express = require('express');
 const app = express();
 
-app.use(cors());
-
 require('dotenv').config();
 
 require('./startup/logging')();

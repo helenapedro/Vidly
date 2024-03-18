@@ -1,4 +1,8 @@
 {
   "jwtPrivateKey": "vidly_jwtPrivateKey",
-  "db": "vidly_db"
+  "mysqlHost": "VIDLY_MYSQL_HOST",
+  "mysqlUser": "VIDLY_MYSQL_USER",
+  "mysqlPassword": "VIDLY_MYSQL_PASSWORD",
+  "mysqldb": "VIDLY_MYSQL_DB",
+  "mongodb": "VIDLY_MONGO_DB"
 } 
