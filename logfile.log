@@ -2,3 +2,5 @@
 {"level":"info","message":"Connected to mongodb+srv://mbeua94:Iammbeua@cluster0.iqa6m5k.mongodb.net/..."}
 {"level":"info","message":"Listening on port 3000..."}
 {"level":"info","message":"Connected to mongodb://127.0.0.1:27017/vidly_tests..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to mongodb://127.0.0.1:27017/vidly_tests..."}
