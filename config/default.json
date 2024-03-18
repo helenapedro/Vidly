@@ -1,4 +1,4 @@
 {
   "jwtPrivateKey": "",
-  "db": "mongodb+srv://<username>:<password>@cluster0.iqa6m5k.mongodb.net/"
+  "db": "mongodb+srv://mbeua94:Iammbeua@cluster0.iqa6m5k.mongodb.net/"
 }
